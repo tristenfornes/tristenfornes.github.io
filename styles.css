@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+}
+
+header {
+    background-color: #73000A; /* Garnet for header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+#main-heading {
+    font-size: 2em;
+}
+
+#name-info, #class-info {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#assignments-section {
+    background-color: #000; /* Black background for assignments section */
+    padding: 20px;
+}
+
+#assignments-heading {
+    color: #fff; /* White for assignments heading */
+}
+
+#assignments-list {
+    list-style: none;
+    padding: 0;
+}
+
+#assignment-link {
+    text-decoration: none;
+    color: #fff; /* White for assignment links */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#assignment-link:hover {
+    text-decoration: underline;
+    color: #B1CC52; /* Gold for link hover color */
+}
+
+#content-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for content container */
+}
