@@ -1,18 +1,19 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff; 
-    color: #000; 
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
 }
 
 header {
-    background-color: #73000A; 
-    color: #fff; 
+    background-color: #73000A;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 #main-heading {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 #name-info, #class-info {
@@ -21,33 +22,61 @@ header {
 }
 
 #assignments-section {
-    background-color: #000; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #333;
     padding: 20px;
 }
 
 #assignments-heading {
-    color: #fff; 
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #assignments-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#assignments-list li {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #assignment-link {
     text-decoration: none;
-    color: #fff; 
+    color: #fff;
     font-weight: bold;
-    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #B1CC52;
+    transition: background-color 0.3s;
 }
 
 #assignment-link:hover {
-    text-decoration: underline;
-    color: #B1CC52; 
+    background-color: #73000A;
 }
 
 #content-container {
     margin: 20px;
     padding: 20px;
-    background-color: #fff; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
