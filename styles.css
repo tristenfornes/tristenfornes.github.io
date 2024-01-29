@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #3498db; /* Light Blue */
+    background-color: #73000A;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -25,13 +25,12 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #ecf0f1; /* Light Gray */
+    background-color: #ADD8E6; /* Light Blue */
     padding: 20px;
-    margin-top: 20px;
 }
 
 #assignments-heading, #projects-heading {
-    color: #333;
+    color: #fff;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -55,28 +54,22 @@ header {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.33% - 20px); 
-    margin-bottom: 20px; 
-    box-sizing: border-box; 
+    width: calc(33.33% - 20px); /* Adjust as needed */
 }
 
 .assignment-box h3, .project-box h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #333; 
 }
 
-
-#assignment-link, #project-link {
+.item-link {
     text-decoration: none;
     color: #333;
-    transition: background-color 0.3s;
 }
 
-#assignment-link:hover, #project-link:hover {
+.item-link:hover {
     text-decoration: underline;
-    background-color: #e74c3c; /* Red */
-    color: #fff;
+    color: #B1CC52;
 }
 
 #content-container {
