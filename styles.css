@@ -56,11 +56,16 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
+}
 
 .assignment-box h3, .project-box h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #333; 
 }
+
 
 #assignment-link, #project-link {
     text-decoration: none;
