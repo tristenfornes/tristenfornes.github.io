@@ -25,7 +25,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #ADD8E6; /* Light Blue */
+    background-color: #3498db; /* Blue for assignments */
     padding: 20px;
 }
 
@@ -50,11 +50,10 @@ header {
 }
 
 .assignment-box, .project-box {
-    background-color: #fff;
+    background-color: #ecf0f1; /* Light Blue for assignments */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.33% - 20px); /* Adjust as needed */
 }
 
 .assignment-box h3, .project-box h3 {
@@ -62,14 +61,14 @@ header {
     margin-bottom: 10px;
 }
 
-.item-link {
+#assignment-link, #project-link {
     text-decoration: none;
     color: #333;
 }
 
-.item-link:hover {
+#assignment-link:hover, #project-link:hover {
     text-decoration: underline;
-    color: #B1CC52;
+    color: #e74c3c; /* Red on hover */
 }
 
 #content-container {
