@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #73000A;
+    background-color: #3498db; /* Light Blue */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -25,13 +25,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #333;
+    background-color: #ecf0f1; /* Light Gray */
     padding: 20px;
-    margin-top: 20px; /* Added to provide space between assignments and projects */
+    margin-top: 20px;
 }
 
 #assignments-heading, #projects-heading {
-    color: #fff;
+    color: #333;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -55,6 +55,7 @@ header {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: calc(33.33% - 20px); /* Updated to extend to the end of the screen */
 }
 
 .assignment-box h3, .project-box h3 {
@@ -65,11 +66,13 @@ header {
 #assignment-link, #project-link {
     text-decoration: none;
     color: #333;
+    transition: background-color 0.3s;
 }
 
 #assignment-link:hover, #project-link:hover {
     text-decoration: underline;
-    color: #B1CC52;
+    background-color: #e74c3c; /* Red */
+    color: #fff;
 }
 
 #content-container {
