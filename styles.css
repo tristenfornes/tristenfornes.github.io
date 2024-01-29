@@ -55,8 +55,7 @@ header {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: calc(33.33% - 20px); /* Updated to extend to the end of the screen */
-}
+    width: calc(33.33% - 20px); 
 
 .assignment-box h3, .project-box h3 {
     font-size: 1.5em;
