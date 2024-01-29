@@ -27,6 +27,7 @@ header {
     justify-content: space-around;
     background-color: #333;
     padding: 20px;
+    margin-top: 20px; /* Added to provide space between assignments and projects */
 }
 
 #assignments-heading, #projects-heading {
