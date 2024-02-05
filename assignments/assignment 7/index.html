@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container img:hover {
+            transform: rotate(360deg);
+        }
+
+        .slider {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .stars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .star {
+            width: 30px;
+            height: 30px;
+            background: url(images/star.png) no-repeat center center;
+            background-size: cover;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #ffcc00;">Three Column Layout</h1>
+    </header>
+
+    <main>
+        <div class="column" style="background-color: #ff9999;">
+            <h2>Change Image</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="image-container">
+                <img src="https://picsum.photos/200" alt="Image 1" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="column" style="background-color: #99ccff;">
+            <h2>Image Rotate</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <input type="range" class="slider" min="0" max="360" value="0" oninput="rotateImage(this.value)">
+        </div>
+
+        <div class="column" style="background-color: #b3ffb3;">
+            <h2>Stars</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="stars" onclick="addStar()">
+                <!-- Stars will be added here dynamically -->
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function changeImage(img) {
+            img.src = "https://picsum.photos/200";
+        }
+
+        function rotateImage(degrees) {
+            document.querySelector('.image-container img').style.transform = `rotate(${degrees}deg)`;
+        }
+
+        function addStar() {
+            const starsContainer = document.querySelector('.stars');
+            const starElement = document.createElement('div');
+            starElement.classList.add('star');
+            starsContainer.appendChild(starElement);
+        }
+    </script>
+</body>
+</html>
