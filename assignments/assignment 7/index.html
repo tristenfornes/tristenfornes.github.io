@@ -94,7 +94,9 @@
         <div class="column" style="background-color: #99ccff;">
             <h2>Image Rotate</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="range" class="slider" min="0" max="360" value="0" oninput="rotateImage(this.value)">
+            <div class="image-container">
+                <img src="https://picsum.photos/200" alt="Image 2" onclick="rotateImage(this)">
+            </div>
         </div>
 
         <div class="column" style="background-color: #b3ffb3;">
@@ -108,11 +110,11 @@
 
     <script>
         function changeImage(img) {
-            img.src = "https://picsum.photos/200";
+            img.src = "https://picsum.photos/200/200";
         }
 
-        function rotateImage(degrees) {
-            document.querySelector('.image-container img').style.transform = `rotate(${degrees}deg)`;
+        function rotateImage(img) {
+            img.style.transform = `rotate(360deg)`;
         }
 
         function addStar() {
