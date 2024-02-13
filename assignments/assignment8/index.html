@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Yoga Slider</h1>
+    </header>
+
+    <main>
+        <div class="yoga-slider">
+            <img src="https://picsum.photos/200/300" alt="Yoga Image">
+        </div>
+
+        <div class="command-section" id="exercise1">
+            <h2>Exercise 1: Enter Command</h2>
+            <input type="text" id="command-input" onkeypress="changeImage(event)">
+            <p>Commands: A, B, C, D, E, F, G, H</p>
+        </div>
+
+        <div class="yoga-slider" id="exercise2">
+            <h2>Exercise 2: Yoga Slider</h2>
+            <input type="range" min="1" max="8" value="1" oninput="changeYogaImage(this.value)">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
