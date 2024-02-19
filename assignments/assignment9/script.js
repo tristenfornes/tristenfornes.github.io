@@ -1,39 +1,37 @@
 // Exercise 1: Bounce Ball
-var bouncing = false;
+let intervalId;
+let ballPosition = 0;
+let direction = 1; 
+let bouncing = false; 
 
 function startStopBouncing(event) {
     event.preventDefault();
-    var link = event.target;
-    var container = document.querySelector('.container');
-    var ball = document.querySelector('.ball');
+    const link = event.target;
 
-    if (!bouncing) {
+    if (!bouncing) { 
         link.textContent = 'Stop';
-        bouncing = true;
-        var interval = setInterval(function() {
-            var topPosition = parseInt(getComputedStyle(ball).top);
-            var containerHeight = parseInt(getComputedStyle(container).height);
-            var ballHeight = parseInt(getComputedStyle(ball).height);
-
-            if (topPosition + ballHeight >= containerHeight) {
-                ball.style.top = containerHeight - ballHeight + 'px';
-                ball.style.transition = 'top 0s';
-                setTimeout(function() {
-                    ball.style.transition = 'top 1s';
-                }, 100);
-            } else if (topPosition <= 0) {
-                ball.style.top = '0';
-            } else {
-                ball.style.top = topPosition + 10 + 'px';
-            }
-        }, 100);
-        ball.interval = interval;
+        intervalId = setInterval(moveBall, 50);
+        bouncing = true; 
     } else {
         link.textContent = 'Start';
-        bouncing = false;
-        clearInterval(ball.interval);
+        clearInterval(intervalId);
+        bouncing = false; 
     }
 }
+
+function moveBall() {
+    const container = document.querySelector('.container');
+    const containerHeight = container.clientHeight;
+    const ball = document.querySelector('.ball');
+    const ballHeight = ball.clientHeight;
+
+    ballPosition += direction;
+    if (ballPosition >= containerHeight - ballHeight || ballPosition <= 0) {
+        direction *= -1;
+    }
+    ball.style.top = ballPosition + 'px';
+}
+
 
 // Exercise 2: Yoga Moves
 var yogaImages = document.querySelector('.yoga-images');
