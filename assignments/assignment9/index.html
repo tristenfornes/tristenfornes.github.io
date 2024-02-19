@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Bounce Ball & Exercise 2: Yoga Moves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exercise 1: Bounce Ball & Exercise 2: Yoga Moves</h1>
+    </header>
+
+    <main class="column-layout">
+        <section id="exercise1" class="exercise-section">
+            <h2>Exercise 1: Bounce Ball</h2>
+            <div class="container">
+                <div class="ball"></div>
+            </div>
+            <a href="#" onclick="startStopBouncing(event)">Start</a>
+        </section>
+
+        <section id="exercise2" class="exercise-section">
+            <h2>Exercise 2: Yoga Moves</h2>
+            <div class="yoga-images">
+                <!-- Images will be dynamically added here -->
+                <img src="images/yoga1.jpg" alt="Yoga Move 1" onclick="showDescription(this)">
+                <img src="images/yoga2.jpg" alt="Yoga Move 2" onclick="showDescription(this)">
+                <img src="images/yoga3.jpg" alt="Yoga Move 3" onclick="showDescription(this)">
+                <img src="images/yoga4.jpg" alt="Yoga Move 4" onclick="showDescription(this)">
+                <img src="images/yoga5.jpg" alt="Yoga Move 5" onclick="showDescription(this)">
+                <img src="images/yoga6.jpg" alt="Yoga Move 6" onclick="showDescription(this)">
+                <img src="images/yoga7.jpg" alt="Yoga Move 7" onclick="showDescription(this)">
+                <img src="images/yoga8.jpg" alt="Yoga Move 8" onclick="showDescription(this)">
+            </div>
+            <div class="description"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
