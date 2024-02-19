@@ -1,21 +1,21 @@
 // Exercise 1: Bounce Ball
 let intervalId;
 let ballPosition = 0;
-let direction = 1; 
-let bouncing = false; 
+let direction = 1; // 1 for down, -1 for up
+let bouncing = false; // Added to control bouncing state
 
 function startStopBouncing(event) {
     event.preventDefault();
     const link = event.target;
 
-    if (!bouncing) { 
+    if (!bouncing) { // Check if bouncing is false (not currently bouncing)
         link.textContent = 'Stop';
-        intervalId = setInterval(moveBall, 50);
-        bouncing = true; 
+        intervalId = setInterval(moveBall, 20); // Adjusted interval for constant speed
+        bouncing = true; // Update bouncing state
     } else {
         link.textContent = 'Start';
         clearInterval(intervalId);
-        bouncing = false; 
+        bouncing = false; // Update bouncing state
     }
 }
 
@@ -31,6 +31,7 @@ function moveBall() {
     }
     ball.style.top = ballPosition + 'px';
 }
+
 
 
 // Exercise 2: Yoga Moves
