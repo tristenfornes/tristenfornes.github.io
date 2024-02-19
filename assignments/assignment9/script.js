@@ -1,21 +1,21 @@
 // Exercise 1: Bounce Ball
 let intervalId;
 let ballPosition = 0;
-let direction = 1; // 1 for down, -1 for up
-let bouncing = false; // Added to control bouncing state
+let direction = 1; 
+let bouncing = false; 
 
 function startStopBouncing(event) {
     event.preventDefault();
     const link = event.target;
 
-    if (!bouncing) { // Check if bouncing is false (not currently bouncing)
+    if (!bouncing) { 
         link.textContent = 'Stop';
-        intervalId = setInterval(moveBall, 20); // Adjusted interval for constant speed
-        bouncing = true; // Update bouncing state
+        intervalId = setInterval(moveBall, 20); 
+        bouncing = true; 
     } else {
         link.textContent = 'Start';
         clearInterval(intervalId);
-        bouncing = false; // Update bouncing state
+        bouncing = false; 
     }
 }
 
