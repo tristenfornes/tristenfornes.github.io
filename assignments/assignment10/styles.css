@@ -2,67 +2,48 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
-#main-heading {
-    margin: 0;
-}
-
-#name-info, #class-info {
-    margin: 5px 0;
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
-    margin: 20px;
+    margin-bottom: 30px;
 }
 
-h2 {
-    font-size: 24px;
+.advertisement {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 10px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.item-link {
-    text-decoration: none;
-    color: #333;
+.attribution {
+    font-size: 14px;
+    text-align: center;
 }
 
-.assignment-box, .project-box {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+@media only screen and (max-width: 600px) {
+    .advertisement {
+        font-size: 16px;
+    }
 }
-
-.assignment-box img, .project-box img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.assignment-box h3, .project-box h3 {
-    margin-top: 10px;
-}
-
-.assignment-box p, .project-box p {
-    margin: 10px 0;
-}
-
-#content-container {
-}
-
-
