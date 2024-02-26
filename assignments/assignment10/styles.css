@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-heading {
+    margin: 0;
+}
+
+#name-info, #class-info {
+    margin: 5px 0;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.assignment-box, .project-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-box img, .project-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.assignment-box h3, .project-box h3 {
+    margin-top: 10px;
+}
+
+.assignment-box p, .project-box p {
+    margin: 10px 0;
+}
+
+#content-container {
+}
+
+
