@@ -15,11 +15,11 @@ function changeAdvertisement() {
     const adAndImage = adsAndImages[adIndex];
     advertisement.textContent = adAndImage.ad;
 
-    const imageContainer = document.getElementById('image-container');
+    const imageContainer = document.getElementById('image-container-part1'); 
     const image = `images/${adAndImage.image}`;
     imageContainer.style.backgroundImage = `url(${image})`;
 
-    const attribution = document.getElementById('attribution');
+    const attribution = document.getElementById('attribution-part1'); 
     attribution.textContent = adAndImage.attribution;
 
     adIndex = (adIndex + 1) % adsAndImages.length;
@@ -30,7 +30,7 @@ setInterval(changeAdvertisement, 2000);
 
 // Assignment 10 - Part 2: Images and Attributions
 
-const imageContainer = document.getElementById('image-container-part2');
+const imageContainerPart2 = document.getElementById('image-container-part2');
 
 for (const item of adsAndImages) {
     const image = document.createElement('img');
@@ -40,6 +40,6 @@ for (const item of adsAndImages) {
     const attribution = document.createElement('p');
     attribution.textContent = item.attribution;
 
-    imageContainer.appendChild(image);
-    imageContainer.appendChild(attribution);
+    imageContainerPart2.appendChild(image); 
+    imageContainerPart2.appendChild(attribution); 
 }
