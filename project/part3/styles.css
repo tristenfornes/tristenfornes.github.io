@@ -127,3 +127,156 @@ section#explorersHaven {
       width: 100%;
   }
 }
+/* Contact Me Form styles */
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049; /* Darker green button on hover */
+}
+
+.success-message,
+.error-message {
+  display: none;
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #4CAF50; /* Green background for success message */
+  color: white;
+}
+
+.error-message {
+  background-color: #f44336; /* Red background for error message */
+  color: white;
+}
+
+/* Data Entry Form styles */
+.data-entry-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.data-entry-form {
+  width: 50%;
+}
+
+.data-entry-form input,
+.data-entry-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.data-entry-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.data-entry-form button:hover {
+  background-color: #45a049; /* Darker green button on hover */
+}
+
+/* IFrame styles */
+#iframe-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#iframe {
+  width: 80%;
+  height: 500px;
+  border: none;
+}
+/* Hamburger Menu styles */
+.navbar {
+  background-color: #333; /* Dark background color for navbar */
+  overflow: hidden;
+}
+
+.logo {
+  float: left;
+}
+
+.menu {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    clear: both;
+    float: none;
+  }
+
+  .menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
