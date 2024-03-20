@@ -14,8 +14,8 @@ body {
 /* Common styles for cards */
 .card-container {
   display: flex;
-  flex-direction: column; /* Stack cards vertically */
-  align-items: center; /* Center cards horizontally */
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 20px;
 }
 
@@ -23,7 +23,7 @@ body {
   border: 1px solid #ddd;
   padding: 20px;
   margin: 20px;
-  width: calc(100% - 40px); /* Adjust card width */
+  width: calc(33.33% - 40px);
   box-sizing: border-box;
   background-color: #fff; /* White background for cards */
 }
@@ -265,4 +265,30 @@ section#explorersHaven {
   height: 3px; 
   background-color: white;
   margin: 4px 0;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    clear: both;
+    float: none;
+  }
+
+  .menu li {
+    display: block;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Center items on mobile */
+  .card-container,
+  .contact-form-container,
+  .data-entry-form-container,
+  #home {
+    align-items: center;
+  }
 }
