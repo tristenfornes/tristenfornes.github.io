@@ -1,0 +1,107 @@
+body {
+    font-family: 'Georgia', serif;
+    background-image: url('images/colo3.jpeg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #f4e9cd; 
+}
+
+/* Main content container */
+#container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(50, 23, 12, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: #c99e6f; 
+    font-size: 2.8em;
+}
+
+h2 {
+    color: #a67c52; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #663d1a; 
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4e9cd; 
+    font-size: 1.3em;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #a67c52; 
+    border-radius: 5px;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 400px;
+    height: auto;
+    border: 3px solid #c99e6f; 
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #32230d;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #3d2a1e;
+    color: #f4e9cd;
+}
+
+th, td {
+    border: 1px solid #a67c52;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #c99e6f;
+    color: #32230d;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #4e3427;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.padded {
+    padding: 20px;
+}
