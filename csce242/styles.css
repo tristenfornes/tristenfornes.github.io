@@ -1,63 +1,122 @@
+/* General page styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #73000a; 
-    color: #ffffff; 
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Main content container */
-#content {
-    max-width: 800px;
+/* Header styling */
+header {
+    background-color: #73000a; /* Garnet color for Gamecock theme */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 5px 0 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Assignments section */
+.assignments {
+    max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8); 
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+}
+
+.assignments h2 {
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #000000;
 }
 
-/* Heading styles */
-h1 {
-    color: #73000a; 
-    font-size: 2.5em;
-    background-color: #ffffff; 
-    padding: 10px;
-    border-radius: 5px;
+/* Assignment items */
+.assignment-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
 }
 
-h2 {
-    color: #a5acaf; 
+.assignment {
+    flex: 1 1 calc(33.333% - 20px); /* Three assignments per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #e8eef9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Paragraph styles */
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #f1f1f1;
+.assignment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Links styling */
-#assignments-list a {
-    text-decoration: none;
-    color: #a5acaf; 
+.assignment img {
+    width: 100%;
+    max-width: 300px; /* Ensures all images are consistent */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.assignment h3 {
     font-size: 1.3em;
+    margin: 0 0 10px;
+    color: #000000;
+}
+
+.assignment p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.assignment a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #73000a;
+    padding: 10px 20px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
-#assignments-list a:hover {
-    color: #ffffff; 
+.assignment a:hover {
+    background-color: #a6272e; /* Slightly lighter garnet on hover */
 }
 
-/* Assignments list */
-#assignments-list {
-    list-style: none;
-    padding: 0;
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-#assignments-list li {
-    margin: 15px 0;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .assignment-container {
+        flex-direction: column;
+        gap: 30px; /* Adds extra spacing for stacked items */
+    }
+
+    .assignment {
+        flex: 1 1 100%; /* Full width for each assignment */
+    }
 }
