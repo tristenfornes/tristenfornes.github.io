@@ -100,6 +100,91 @@ header h2 {
     background-color: #a6272e; /* Slightly lighter garnet on hover */
 }
 
+/* Projects section */
+.projects {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Project items */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 20px); /* Three projects per row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #e8eef9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 1.3em;
+    margin: 0 0 10px;
+    color: #000000;
+}
+
+.project p {
+    font-size: 1em;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #73000a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.project a:hover {
+    background-color: #a6272e;
+}
+
+/* Project step styling */
+.project-step {
+    margin-bottom: 20px;
+}
+
+.project-step h4 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
 /* Footer styling */
 footer {
     text-align: center;
@@ -111,12 +196,14 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .assignment-container {
+    .assignment-container,
+    .project-container {
         flex-direction: column;
         gap: 30px; /* Adds extra spacing for stacked items */
     }
 
-    .assignment {
-        flex: 1 1 100%; /* Full width for each assignment */
+    .assignment,
+    .project {
+        flex: 1 1 100%; /* Full width for each assignment and project */
     }
 }
