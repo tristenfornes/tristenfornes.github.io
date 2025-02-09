@@ -1,0 +1,212 @@
+/* CSS Variables for Colors */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #000000;
+    --header-text: #ffffff;
+    --footer-bg: #000000;
+    --footer-text: #ffffff;
+    --link-color: #000000;
+    --link-hover: #555555;
+    --border-color: #000000;
+  }
+  
+  /* Global Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Hero Image */
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Latest News Section */
+  .latest-news {
+    margin-top: 2rem;
+  }
+  
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .news-card {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    background: #f9f9f9;
+    text-align: center; 
+  }
+  
+  /* New rule: Center images in news cards */
+  .news-card img {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  /* Our Story Section (About Us) */
+  .our-story {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid var(--border-color);
+  }
+  
+  /* About Blocks: Top row with 3 blocks */
+  .about-blocks-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* About Blocks: Bottom row for Contact Information */
+  .about-blocks-bottom {
+    display: block;
+  }
+  
+  .about-blocks-bottom .block {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+  }
+  
+  /* Fixtures - Cards Layout */
+  .fixtures-cards {
+    margin-top: 2rem;
+  }
+  
+  .fixtures-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .fixtures-grid.two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Fixture Card */
+  .fixture-card {
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    transition: transform 0.2s;
+    background: #f9f9f9;
+  }
+  
+  .fixture-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .fixture-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Game Details Page Sections */
+  .game-details img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+  
+  .game-details section {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background: #f9f9f9;
+  }
+  
+  /* Fan Zone Layout */
+  .fan-zone section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+  }
+  
+  .reactions-grid, 
+  .games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .fan-zone img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+    .about-blocks-top {
+      grid-template-columns: 1fr;
+    }
+    .fixtures-grid.two-column {
+      grid-template-columns: 1fr;
+    }
+  }
+  
