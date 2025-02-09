@@ -100,7 +100,7 @@ header h2 {
     background-color: #a6272e; /* Slightly lighter garnet on hover */
 }
 
-/* Projects section */
+/* Projects section (mimicking assignments section) */
 .projects {
     max-width: 1200px;
     margin: 50px auto;
