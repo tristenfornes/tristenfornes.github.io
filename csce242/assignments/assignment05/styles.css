@@ -1,0 +1,109 @@
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333;
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    background-color: #00796b; /* Teal background */
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    background-color: #00796b; /* Teal background */
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  
+  .column {
+    flex: 1 1 30%;
+    background: #ffffff;
+    border: 2px solid #b2ebf2; /* Light blue border */
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .column:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #fff; 
+  }
+  
+  .color-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .star {
+    font-size: 2.5rem;
+    color: #f39c12; /* Default star color (golden orange) */
+    transition: color 0.3s ease;
+  }
+  
+  /* Style for the hello column */
+  .hello-content {
+    text-align: left;
+    margin-top: 1rem;
+    min-height: 50px;
+    border-top: 1px dashed #ccc;
+    padding-top: 0.5rem;
+  }
+  
+  /* Style for the clickable image */
+  #clickable-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  
+  /* Mobile layout: stack columns on small screens */
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+    .column {
+      margin: 0.5rem 0;
+    }
+  }
+  
