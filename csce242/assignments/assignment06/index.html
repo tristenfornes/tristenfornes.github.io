@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment 6 - If Statements</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Assignment 6</h1>
+      <h2>If Statements</h2>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+      <span class="nav-toggle">▼</span>
+      <div class="nav-items">
+        <a href="#" id="exercise1Link">Exercise 1: Traveling</a>
+        <a href="#" id="exercise2Link">Exercise 2: Color My Heart</a>
+      </div>
+    </div>
+
+    <!-- Traveling Section -->
+    <div id="travelingSection">
+      <h2>Traveling View</h2>
+      <p>Type a mode of transportation (bike, scooter, car, skateboard):</p>
+      <input
+        type="text"
+        id="transportInput"
+        placeholder="Enter transportation"
+      />
+      <div class="image-box" id="transportImageBox">
+        <!-- Image will appear here if input is valid -->
+      </div>
+    </div>
+
+    <!-- Color My Heart Section -->
+    <div id="heartSection" class="hidden">
+      <h2>Color My Heart Chooser View</h2>
+      <div class="heart-box">
+        <span class="heart" id="heart">&#10084;</span>
+      </div>
+      <div class="button-container">
+        <button id="btn-red" data-color="#e53935">Red</button>
+        <button id="btn-green" data-color="#43a047">Green</button>
+        <button id="btn-blue" data-color="#1e88e5">Blue</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>@tristenfornes.github.io</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
