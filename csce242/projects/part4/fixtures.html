@@ -7,10 +7,14 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Header with Hamburger Menu -->
   <header>
-    <h1>GameDay Central</h1>
+    <div class="logo">
+      <h1>GameDay Central</h1>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="fixtures.html" class="active">Fixtures</a></li>
@@ -22,34 +26,33 @@
   <main>
     <section class="fixtures-cards">
       <h2>Upcoming Fixtures</h2>
-      <!-- The "two-column" class forces a 2-column layout -->
       <div class="fixtures-grid two-column">
         <div class="fixture-card">
           <a href="game.html">
-            <img src="https://picsum.photos/seed/game1/400/250" alt="Game 1">
-            <h3>Game 1: Team A vs. Team B</h3>
-            <p>Date: Jan 1, 2026 | Time: 7:00 PM</p>
+            <img src="images/lions.jpeg" alt="Game 1: The Lions vs. The Tigers">
+            <h3>Game 1: The Lions vs. The Falcons</h3>
+            <p>Date: March 15, 2026 | Time: 7:00 PM</p>
           </a>
         </div>
         <div class="fixture-card">
           <a href="game.html">
-            <img src="https://picsum.photos/seed/game2/400/250" alt="Game 2">
-            <h3>Game 2: Team C vs. Team D</h3>
-            <p>Date: Jan 2, 2026 | Time: 8:00 PM</p>
+            <img src="images/eagles.jpeg" alt="Game 2: The Eagles vs. The Hawks">
+            <h3>Game 2: The Eagles vs. The Chiefs</h3>
+            <p>Date: March 16, 2026 | Time: 8:30 PM</p>
           </a>
         </div>
         <div class="fixture-card">
           <a href="game.html">
-            <img src="https://picsum.photos/seed/game3/400/250" alt="Game 3">
-            <h3>Game 3: Team E vs. Team F</h3>
-            <p>Date: Jan 3, 2026 | Time: 6:30 PM</p>
+            <img src="images/sharks.png" alt="Game 3: The Sharks vs. The Dolphins">
+            <h3>Game 3: The Sharks vs. The Predators</h3>
+            <p>Date: March 17, 2026 | Time: 6:45 PM</p>
           </a>
         </div>
         <div class="fixture-card">
           <a href="game.html">
-            <img src="https://picsum.photos/seed/game4/400/250" alt="Game 4">
-            <h3>Game 4: Team G vs. Team H</h3>
-            <p>Date: Jan 4, 2026 | Time: 9:00 PM</p>
+            <img src="images/warriors.jpeg" alt="Game 4: The Warriors vs. The Giants">
+            <h3>Game 4: The Warriors vs. The Lakers</h3>
+            <p>Date: March 18, 2026 | Time: 9:15 PM</p>
           </a>
         </div>
       </div>
@@ -59,5 +62,7 @@
   <footer>
     <p>GameDay Central - Where Every Play Matters</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

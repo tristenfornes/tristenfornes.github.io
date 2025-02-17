@@ -1,0 +1,275 @@
+/* CSS Variables for a Sporty Color Scheme with Blue-to-Red Gradient */
+:root {
+  --bg-color: #ffffff;            /* White background */
+  --text-color: #333333;          /* Dark gray text */
+  --header-bg-start: #0d47a1;       /* Deep blue */
+  --header-bg-end: #b71c1c;         /* Deep red */
+  --footer-bg-start: #0d47a1;       /* Deep blue */
+  --footer-bg-end: #b71c1c;         /* Deep red */
+  --header-text: #ffffff;         /* White header text */
+  --footer-text: #ffffff;         /* White footer text */
+  --link-color: #0d47a1;          /* Deep blue for links */
+  --link-hover: #b71c1c;          /* Deep red on hover */
+  --border-color: #bdbdbd;        /* Light gray borders */
+  --secondary-color: #b71c1c;     /* Red accent */
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Center all images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--header-bg-start), var(--header-bg-end));
+  color: var(--header-text);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+/* Hamburger/Toggle Menu */
+.menu-toggle {
+  display: none;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Latest News Section */
+.latest-news {
+  margin-top: 2rem;
+}
+
+.latest-news h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: var(--header-bg-start);
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Our Story Section (About Us) */
+.our-story {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+/* Ensure Our Story image scales responsively */
+.our-story img {
+  width: 100%;
+  height: auto;
+}
+
+/* About Blocks: Top row with 3 blocks */
+.about-blocks-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;  /* Increased gap for more space between blocks */
+  margin-bottom: 2rem;
+}
+
+/* Add extra space between images and text in the top about blocks */
+.about-blocks-top .block img {
+  margin-bottom: 20px;
+}
+
+/* About Blocks: Bottom row for Contact Information */
+.about-blocks-bottom {
+  display: block;
+}
+
+.about-blocks-bottom .block {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+/* Fixtures - Cards Layout */
+.fixtures-cards {
+  margin-top: 2rem;
+}
+
+.fixtures-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.fixtures-grid.two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fixture-card {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  background: #ffffff;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.fixture-card:hover {
+  transform: scale(1.02);
+}
+
+.fixture-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Game Details Page Sections */
+.game-details img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.game-details section {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+/* Fan Zone Layout */
+.fan-zone section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.reactions-grid, 
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--footer-bg-start, var(--header-bg-start)), var(--footer-bg-end, var(--header-bg-end)));
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Show hamburger button */
+  .menu-toggle {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 1.8em;
+      color: var(--header-text);
+      cursor: pointer;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+  }
+  /* Hide navigation links by default on small screens */
+  nav ul {
+      flex-direction: column;
+      background-color: var(--header-bg);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      display: none;
+  }
+  /* Display navigation links when toggled */
+  nav ul.active {
+      display: flex;
+  }
+  /* Adjust grid for news container on small screens (1 column) */
+  .news-container {
+      grid-template-columns: 1fr;
+  }
+  /* About Blocks top row: single column */
+  .about-blocks-top {
+      grid-template-columns: 1fr;
+  }
+  /* Fixtures grid: single column */
+  .fixtures-grid.two-column {
+      grid-template-columns: 1fr;
+  }
+}
