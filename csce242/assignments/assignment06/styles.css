@@ -1,137 +1,223 @@
+/* Global Styles */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333;
     text-align: center;
-    background-color: #f0f4f8;
-    color: #444;
-}
-
-.container {
-    margin: auto;
-    width: 50%;
-    padding: 20px;
-    background-color: #3949ab;
+  }
+  
+  /* Header styling (if applicable) */
+  header {
+    background-color: #00796b; /* Teal background */
     color: #fff;
-    border-radius: 15px;
-}
-
-.button-container {
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  
+  /* Container styling */
+  .container {
+    margin: 1rem auto;
+    width: 50%;
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #b2ebf2; /* Light blue border */
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  /* Navigation styling */
+  .nav {
+    background-color: #00796b;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+  }
+  
+  .nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .nav-items {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    padding-left: 20px;
-}
-
-input {
+    flex-direction: row;
+    justify-content: center;
+    background-color: #00796b;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-items a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .nav-items a:not(:last-child)::after {
+    content: " | ";
+    color: #fff;
+    position: absolute;
+    right: -10px;
+  }
+  
+  .nav-items a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  /* Input styling */
+  input {
     padding: 10px;
     width: 80%;
     margin-top: 10px;
-    border: 2px solid #3949ab;
+    border: 2px solid #00796b;
     border-radius: 5px;
-}
-
-.heart-box {
+  }
+  
+  /* Heart and Image Boxes */
+  .heart-box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 200px;
     width: 100%;
     padding-left: 20px;
-}
-
-.image-box {
+  }
+  
+  .heart {
+    font-size: 200px;
+    line-height: 1;
+    display: block;
+    color: #00796b;
+  }
+  
+  .image-box {
     margin-top: 20px;
     height: 150px;
     width: 100%;
     text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.nav {
-    margin-bottom: 20px;
-    cursor: pointer;
-    display: block;
-    text-align: center;
-}
-
-.nav-toggle {
-    display: none;
-    cursor: pointer;
-    font-size: 24px; /* Increased font size for toggle */
-}
-
-.nav-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #283593;
-    gap: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.nav-items a {
-    text-decoration: none;
-    color: #f5f5f5;
-    padding: 8px 10px;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.nav-items a:not(:last-child)::after {
-    content: " | ";
-    color: #f5f5f5;
-    position: absolute;
-    right: -10px;
-}
-
-.nav-items a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-}
-
-.heart {
-    font-size: 200px;
-    line-height: 1;
-    display: block;
-    color: #fff;
-}
-
-.image-box img {
+  }
+  
+  .image-box img {
     width: 150px;
     height: auto;
     max-width: 100%;
     display: block;
     margin: 0 auto;
-}
-
-button {
+    border-radius: 4px;
+  }
+  
+  /* Utility classes */
+  .hidden {
+    display: none;
+  }
+  
+  /* Button styling */
+  button {
     margin: 5px;
     padding: 10px;
     cursor: pointer;
     border: none;
     border-radius: 4px;
-}
-
-#btn-red { background-color: #d32f2f; color: white; }
-#btn-green { background-color: #2e7d32; color: white; }
-#btn-blue { background-color: #1976d2; color: white; }
-
-@media (max-width: 600px) {
+  }
+  
+  #btn-red {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  #btn-green {
+    background-color: #2e7d32;
+    color: white;
+  }
+  
+  #btn-blue {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  /* Footer styling (if applicable) */
+  footer {
+    text-align: center;
+    background-color: #00796b;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  /* Additional styling inspired by the second CSS */
+  .color-picker-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .star {
+    font-size: 2.5rem;
+    color: #f39c12; /* Golden orange */
+    transition: color 0.3s ease;
+  }
+  
+  .hello-content {
+    text-align: left;
+    margin-top: 1rem;
+    min-height: 50px;
+    border-top: 1px dashed #ccc;
+    padding-top: 0.5rem;
+  }
+  
+  #clickable-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 4px;
+    margin-top: 1rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 600px) {
     .nav-toggle {
-        display: inline-block;
+      display: inline-block;
     }
+    
     .nav-items {
-        display: none;
-        flex-direction: column;
-        align-items: center;
+      display: none;
+      flex-direction: column;
+      align-items: center;
     }
+    
     .nav-items.show {
-        display: flex;
+      display: flex;
     }
+    
     .nav-items a:not(:last-child)::after {
-        content: none;
+      content: none;
     }
-}
+    
+    .container {
+      width: 90%;
+      padding: 0.5rem;
+    }
+  }
+  
