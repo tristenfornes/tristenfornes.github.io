@@ -1,0 +1,75 @@
+body {
+    background-color: #1abc9c; /* Vibrant turquoise */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffffff; /* White for strong contrast */
+    margin-bottom: 5px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: #ff6b6b; /* Coral */
+    border: none;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e55050; /* Slightly darker coral on hover */
+  }
+  
+  #stair-container {
+    position: relative;
+    margin: 20px auto;
+    width: 500px;
+    height: 300px;
+    border: 2px solid #f8c291; /* Soft coral border */
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ladder rails (black) */
+  .rail {
+    position: absolute;
+    background-color: #000;
+    width: 10px;
+    height: 100%;
+  }
+  
+  /* Ladder rungs*/
+  .rung {
+    position: absolute;
+    background-color: #000;
+    height: 4px;
+  }
+  
+  /* Stick person styling */
+  #stick-person {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
