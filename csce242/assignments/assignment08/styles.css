@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Overall Page Container */
+  .page-container {
+    background-color: #f2f2eb;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #4a4a4a;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    color: #848484;
+    margin-bottom: 20px;
+  }
+  
+  /* Titles list container */
+  .titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Each clickable title */
+  .title-item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #c15c5c; 
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .title-item:hover {
+    color: #9b4747;
+  }
+  
+  /* Popup Container */
+  #popupContainer.hidden {
+    display: none;
+  }
+  
+  #popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+  
+  /* Dim overlay behind the popup */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Popup Box */
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 4px solid #fad5ca; /* Soft pink border */
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  
+  /* Popup Title */
+  .popup h3 {
+    font-size: 1.3rem;
+    color: #e06262; /* Pinkish text color */
+    margin-bottom: 10px;
+  }
+  
+  /* Popup Image */
+  .popup img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 1.3rem;
+    color: #a44;
+    cursor: pointer;
+  }
+  
+  /* Image Credit Section */
+  .credit {
+    margin-top: 25px;
+    font-size: 0.9rem;
+  }
+  .credit a {
+    color: #666;
+    text-decoration: none;
+  }
+  .credit a:hover {
+    text-decoration: underline;
+  }
+  
