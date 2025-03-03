@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assignment 9 - Classes</title>
+  <!-- Include W3.CSS from W3Schools for modal styling -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Link to our custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header-container">
+    <h1>Assignment 9</h1>
+    <h2>Classes</h2>
+  </div>
+
+  <!-- Container for Pizza Thumbnails -->
+  <div class="pizza-container" id="pizzaList"></div>
+
+  <!-- Footer Note -->
+  <p class="footer">
+    Images from 
+    <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">
+      FreePik
+    </a>
+  </p>
+
+  <!-- The Modal (hidden by default) -->
+  <div id="pizzaModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width:600px">
+      <header class="w3-container w3-teal">
+        <span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+        <h2 id="modalPizzaName"></h2>
+      </header>
+      <div class="w3-container w3-padding">
+        <!-- Rotating image -->
+        <img
+          id="modalPizzaImage"
+          src=""
+          alt="Pizza"
+          style="width:100%; max-height:300px; object-fit:cover"
+        />
+        <p><strong>Description:</strong> <span id="modalPizzaDesc"></span></p>
+        <p><strong>Price:</strong> <span id="modalPizzaPrice"></span></p>
+        <p><strong>Ingredients:</strong> <span id="modalPizzaIngredients"></span></p>
+        <p><strong>Rating:</strong> <span id="modalPizzaRating"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to our JS file (placed last so DOM elements are already loaded) -->
+  <script src="script.js"></script>
+</body>
+</html>

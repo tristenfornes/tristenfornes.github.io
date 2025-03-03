@@ -1,0 +1,100 @@
+/* Base Page Styling */
+body {
+    margin: 0;
+    background-color: #fafaf0; /* Light, neutral background */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header Section */
+  .header-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fefef9;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-container h1 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .header-container h2 {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-weight: normal;
+  }
+  
+  /* Pizza Container */
+  .pizza-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* Each Pizza "Box" */
+  .pizza-box {
+    /* Fix the width and height so all boxes are identical */
+    width: 200px;
+    height: 280px; /* adjust as desired */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+    /* Use flex layout to position image + text consistently */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .pizza-box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Pizza Box Image */
+  .pizza-box img {
+    /* Force the image to fill the top portion of the box */
+    width: 100%;
+    height: 170px; /* adjust as needed */
+    object-fit: cover; /* ensures uniform coverage, cropping if necessary */
+    display: block;
+  }
+  
+  /* Pizza Box Title */
+  .pizza-box h3 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #444;
+    padding: 0 5px; /* small padding for text breathing room */
+  }
+  
+  /* Footer Note */
+  .footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Modal Image Rotation Animation */
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .rotate {
+    animation: rotateImage 1s linear;
+  }
+  
