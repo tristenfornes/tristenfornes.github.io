@@ -40,7 +40,7 @@ body {
   .pizza-box {
     /* Fix the width and height so all boxes are identical */
     width: 200px;
-    height: 280px; /* adjust as desired */
+    height: 280px;
     border: 1px solid #ccc;
     border-radius: 6px;
     overflow: hidden;
