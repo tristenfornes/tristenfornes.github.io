@@ -26,6 +26,60 @@ header h2 {
     font-weight: 300;
 }
 
+/* Fixtures page styling */
+.fixtures {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#fixtures-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.game-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.game-item:hover {
+    transform: scale(1.02);
+}
+
+.game-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.game-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.game-text {
+    padding: 10px;
+    text-align: center;
+}
+
+.game-text h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.game-text p {
+    color: #666;
+    font-size: 0.9em;
+}
+
 /* Assignments section */
 .assignments {
     max-width: 1200px;

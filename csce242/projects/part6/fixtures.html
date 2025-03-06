@@ -17,45 +17,17 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="fixtures.html" class="active">Fixtures</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
         <li><a href="fanzone.html">Fanzone</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="fixtures-cards">
-      <h2>Upcoming Fixtures</h2>
-      <div class="fixtures-grid two-column">
-        <div class="fixture-card">
-          <a href="game.html">
-            <img src="images/lions.jpeg" alt="Game 1: The Lions vs. The Tigers">
-            <h3>Game 1: The Lions vs. The Falcons</h3>
-            <p>Date: March 15, 2026 | Time: 7:00 PM</p>
-          </a>
-        </div>
-        <div class="fixture-card">
-          <a href="game.html">
-            <img src="images/eagles.jpeg" alt="Game 2: The Eagles vs. The Hawks">
-            <h3>Game 2: The Eagles vs. The Chiefs</h3>
-            <p>Date: March 16, 2026 | Time: 8:30 PM</p>
-          </a>
-        </div>
-        <div class="fixture-card">
-          <a href="game.html">
-            <img src="images/sharks.png" alt="Game 3: The Sharks vs. The Dolphins">
-            <h3>Game 3: The Sharks vs. The Predators</h3>
-            <p>Date: March 17, 2026 | Time: 6:45 PM</p>
-          </a>
-        </div>
-        <div class="fixture-card">
-          <a href="game.html">
-            <img src="images/warriors.jpeg" alt="Game 4: The Warriors vs. The Giants">
-            <h3>Game 4: The Warriors vs. The Lakers</h3>
-            <p>Date: March 18, 2026 | Time: 9:15 PM</p>
-          </a>
-        </div>
-      </div>
+    <section class="fixtures">
+      <h2>Fixtures</h2>
+      <!-- All game items will be inserted into this container -->
+      <div id="fixtures-container"></div>
     </section>
   </main>
 
@@ -63,6 +35,7 @@
     <p>GameDay Central - Where Every Play Matters</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- External JavaScript file for dynamic content -->
+  <script src="fixtures.js"></script>
 </body>
 </html>

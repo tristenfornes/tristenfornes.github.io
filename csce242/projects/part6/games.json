@@ -18,7 +18,7 @@
     },
     {
       "_id": 2,
-      "img_name": "images/game2.jpg",
+      "img_name": "lions.jpeg",
       "teamA": "Lions",
       "teamB": "Tigers",
       "date": "2025-03-13",
@@ -35,7 +35,7 @@
     },
     {
       "_id": 3,
-      "img_name": "images/game3.jpg",
+      "img_name": "warriors.jpeg",
       "teamA": "Bulls",
       "teamB": "Bears",
       "date": "2025-03-14",
@@ -52,7 +52,7 @@
     },
     {
       "_id": 4,
-      "img_name": "images/game4.jpg",
+      "img_name": "sharks.png",
       "teamA": "Eagles",
       "teamB": "Sharks",
       "date": "2025-03-15",
