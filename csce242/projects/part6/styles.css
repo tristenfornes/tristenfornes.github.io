@@ -1,0 +1,325 @@
+/* CSS Variables for a Sporty, Clean Color Scheme with Blue-to-Red Gradient and Extra Accents */
+:root {
+  --bg-color: #e0f7fa;            /* Light cyan background */
+  --text-color: #333333;          /* Dark gray text */
+  --header-bg-start: #0d47a1;       /* Deep blue */
+  --header-bg-end: #b71c1c;         /* Deep red */
+  --footer-bg-start: #0d47a1;       /* Deep blue */
+  --footer-bg-end: #b71c1c;         /* Deep red */
+  --header-text: #ffffff;         /* White header text */
+  --footer-text: #ffffff;         /* White footer text */
+  --link-color: #0d47a1;          /* Deep blue for links */
+  --link-hover: #b71c1c;          /* Deep red on hover */
+  --border-color: #bdbdbd;        /* Light gray borders */
+  --secondary-color: #b71c1c;     /* Red accent */
+  --accent-color: #ff9800;        /* Vibrant orange accent */
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Center all images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, var(--header-bg-start), var(--header-bg-end));
+  color: var(--header-text);
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 1000;
+}
+
+header .logo h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: var(--accent-color);
+}
+
+/* Hamburger/Toggle Menu */
+.menu-toggle {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  color: var(--header-text);
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--footer-bg-start), var(--footer-bg-end));
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Container & Column (for multi-column layouts) */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.column {
+  flex: 1 1 30%;
+  background: #ffffff;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.column:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Latest News Section */
+.latest-news {
+  margin-top: 2rem;
+}
+
+.latest-news h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: var(--header-bg-start);
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+.news-item img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Our Story Section (About Us) */
+.our-story {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.our-story img {
+  width: 100%;
+  height: auto;
+}
+
+/* About Blocks: Top Row with 3 Blocks */
+.about-blocks-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;  /* Increased gap for more space between blocks */
+  margin-bottom: 2rem;
+}
+
+.about-blocks-top .block {
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-blocks-top .block h2 {
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+.about-blocks-top .block img {
+  margin-bottom: 20px;
+}
+
+/* About Blocks: Bottom Row for Contact Information */
+.about-blocks-bottom {
+  display: block;
+}
+
+.about-blocks-bottom .block {
+  background: #ffffff;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Fixtures - Cards Layout */
+.fixtures-cards {
+  margin-top: 2rem;
+}
+
+.fixtures-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.fixtures-grid.two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.fixture-card {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  background: #ffffff;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.fixture-card:hover {
+  transform: scale(1.02);
+}
+
+.fixture-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Game Details Page Sections */
+.game-details img {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
+}
+
+.game-details section {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-left: 5px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+/* Fan Zone Layout */
+.fan-zone section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.reactions-grid, 
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+      padding: 0.5rem;
+  }
+  .column {
+      margin: 0.5rem 0;
+  }
+  /* Hamburger Menu on Mobile */
+  .menu-toggle {
+      display: block;
+  }
+  nav ul {
+      flex-direction: column;
+      background-color: var(--header-bg);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+      display: none;
+      z-index: 2000;
+  }
+  nav ul.active {
+      display: flex;
+      animation: fadeIn 0.3s ease;
+  }
+  @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+  .news-container {
+      grid-template-columns: 1fr;
+  }
+  .about-blocks-top {
+      grid-template-columns: 1fr;
+  }
+  .fixtures-grid.two-column {
+      grid-template-columns: 1fr;
+  }
+}

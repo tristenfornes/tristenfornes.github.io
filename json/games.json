@@ -1,0 +1,139 @@
+[
+    {
+      "_id": 1,
+      "img_name": "images/game1.jpg",
+      "teamA": "Falcons",
+      "teamB": "Hawks",
+      "date": "2025-03-12",
+      "location": "Falcon Stadium",
+      "score": "2-1",
+      "game_summary": "Falcons edged out the Hawks in a thrilling match.",
+      "play_by_play": "The match began with high energy and saw quick transitions until a last-minute goal secured the win.",
+      "match_stats": {
+        "possession": "55%-45%",
+        "shots_on_goal": "8-5",
+        "fouls": "12-14",
+        "yellow_cards": "2-3"
+      }
+    },
+    {
+      "_id": 2,
+      "img_name": "images/game2.jpg",
+      "teamA": "Lions",
+      "teamB": "Tigers",
+      "date": "2025-03-13",
+      "location": "Lion Arena",
+      "score": "3-3",
+      "game_summary": "A fierce contest ended in a draw with both sides showcasing strong determination.",
+      "play_by_play": "Early pressure from both teams set a fast pace, with crucial equalizers in the second half.",
+      "match_stats": {
+        "possession": "48%-52%",
+        "shots_on_goal": "7-7",
+        "fouls": "10-12",
+        "yellow_cards": "1-2"
+      }
+    },
+    {
+      "_id": 3,
+      "img_name": "images/game3.jpg",
+      "teamA": "Bulls",
+      "teamB": "Bears",
+      "date": "2025-03-14",
+      "location": "Bullring",
+      "score": "4-2",
+      "game_summary": "Bulls displayed an aggressive offense to overcome the Bears in a high-scoring encounter.",
+      "play_by_play": "Constant pressure and tactical maneuvers led to multiple breakaways and exciting goals.",
+      "match_stats": {
+        "possession": "60%-40%",
+        "shots_on_goal": "10-4",
+        "fouls": "8-9",
+        "yellow_cards": "3-1"
+      }
+    },
+    {
+      "_id": 4,
+      "img_name": "images/game4.jpg",
+      "teamA": "Eagles",
+      "teamB": "Sharks",
+      "date": "2025-03-15",
+      "location": "Eagle Nest Stadium",
+      "score": "1-0",
+      "game_summary": "Eagles secured a narrow win with a stellar defensive display against the Sharks.",
+      "play_by_play": "A singular moment of brilliance in the 70th minute proved decisive in this tight match.",
+      "match_stats": {
+        "possession": "50%-50%",
+        "shots_on_goal": "5-3",
+        "fouls": "7-11",
+        "yellow_cards": "0-1"
+      }
+    },
+    {
+      "_id": 5,
+      "img_name": "images/game5.jpg",
+      "teamA": "Dragons",
+      "teamB": "Knights",
+      "date": "2025-03-16",
+      "location": "Dragon's Den",
+      "score": "5-4",
+      "game_summary": "An epic clash ended in a high-scoring thriller between the Dragons and Knights.",
+      "play_by_play": "The game was filled with rapid turnovers and dramatic goals, particularly in the second half.",
+      "match_stats": {
+        "possession": "53%-47%",
+        "shots_on_goal": "12-11",
+        "fouls": "15-13",
+        "yellow_cards": "2-4"
+      }
+    },
+    {
+      "_id": 6,
+      "img_name": "images/game6.jpg",
+      "teamA": "Wolves",
+      "teamB": "Panthers",
+      "date": "2025-03-17",
+      "location": "Wolf Arena",
+      "score": "0-0",
+      "game_summary": "A defensive battle left both Wolves and Panthers without a score.",
+      "play_by_play": "Numerous missed opportunities defined the match, with both defenses holding strong throughout.",
+      "match_stats": {
+        "possession": "47%-53%",
+        "shots_on_goal": "3-3",
+        "fouls": "9-10",
+        "yellow_cards": "1-1"
+      }
+    },
+    {
+      "_id": 7,
+      "img_name": "images/game7.jpg",
+      "teamA": "Raptors",
+      "teamB": "Cheetahs",
+      "date": "2025-03-18",
+      "location": "Raptor Stadium",
+      "score": "2-2",
+      "game_summary": "A well-fought match ended in a balanced draw between the Raptors and Cheetahs.",
+      "play_by_play": "Quick transitions and strategic plays kept the match exciting right until the final whistle.",
+      "match_stats": {
+        "possession": "52%-48%",
+        "shots_on_goal": "6-6",
+        "fouls": "11-11",
+        "yellow_cards": "1-1"
+      }
+    },
+    {
+      "_id": 8,
+      "img_name": "images/game8.jpg",
+      "teamA": "Pirates",
+      "teamB": "Vikings",
+      "date": "2025-03-19",
+      "location": "Pirate Cove",
+      "score": "3-1",
+      "game_summary": "Pirates sailed to victory in a hard-fought contest against the Vikings.",
+      "play_by_play": "Early dominance by the Pirates set the tone, with a solid defense sealing the win in the later stages.",
+      "match_stats": {
+        "possession": "58%-42%",
+        "shots_on_goal": "9-4",
+        "fouls": "10-8",
+        "yellow_cards": "2-0"
+      }
+    }
+  ]
+  
