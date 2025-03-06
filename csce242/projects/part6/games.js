@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Replace the URL below with the actual URL where your JSON file is hosted on GitHub
-    const jsonUrl = "https://tritenfornes.github.io/json/games.json";
+    const jsonUrl = "https://tristenfornes.github.io/json/games.json";
   
     fetch(jsonUrl)
       .then(response => {
