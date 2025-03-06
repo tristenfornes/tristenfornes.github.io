@@ -8,8 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Replace with the actual URL of your JSON file on GitHub
-    const jsonUrl = "https://tristenfornes.github.io/json/games.json";
+    const jsonUrl = "https://tristenfornes.github.io/csce242/projects/part6/games.json";
   
     // Helper function to extract a query parameter by name from the URL
     function getParameterByName(name, url = window.location.href) {
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", function() {
         return response.json();
       })
       .then(games => {
-        // Use .find() to select only the game with the matching _id
         const game = games.find(g => g._id == gameId);
         if (!game) {
           console.error("Game not found.");

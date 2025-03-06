@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // Replace with the actual URL where your JSON file is hosted on GitHub
-    const jsonUrl = "https://tristenfornes.github.io/json/games.json";
+document.addEventListener("DOMContentLoaded", function() {
+    const jsonUrl = "https://tristenfornes.github.io/csce242/projects/part6/games.json";
     
     fetch(jsonUrl)
       .then(response => {
@@ -24,43 +23,44 @@ document.addEventListener("DOMContentLoaded", function () {
   
         games.forEach(game => {
           // Create a container for each game item
-          const gameItem = document.createElement("div");
-          gameItem.classList.add("game-item");
+          const section = document.createElement("section");
+          section.classList.add("game-item");
+          container.appendChild(section);
   
-          // Create a clickable image link using your provided snippet
-          const img = document.createElement("img");
           const imglink = document.createElement("a");
-          // Use game.reference if it exists; otherwise, default to game details page
           imglink.href = game.reference ? game.reference : `game.html?gameId=${game._id}`;
-          imglink.target = "_blank"; 
-          // Set image source (adjust the path if needed)
-          img.src = `json/images/${game.img_name}`;
-          // Use a descriptive alt text (using teams for this example)
+          const img = document.createElement("img");
+          img.src = `images/${game.img_name}`;
           img.alt = `${game.teamA} vs ${game.teamB}`;
           img.style.cursor = "pointer";
           imglink.appendChild(img);
-          gameItem.appendChild(imglink);
+          section.appendChild(imglink);
   
-          // Create a container for text details (title and date)
-          const textContainer = document.createElement("div");
-          textContainer.classList.add("game-text");
-  
-          const title = document.createElement("h3");
-          title.textContent = `${game.teamA} vs ${game.teamB}`;
-          textContainer.appendChild(title);
-  
-          const datePara = document.createElement("p");
-          datePara.textContent = game.date;
-          textContainer.appendChild(datePara);
-  
-          gameItem.appendChild(textContainer);
-          container.appendChild(gameItem);
+          // Create a container for text details
+          const ul = document.createElement("ul");
+          ul.style.listStyleType = "none";
+          const details = [
+            `Teams: ${game.teamA} vs ${game.teamB}`,
+            `Date: ${game.date}`,
+            `Score: ${game.score}`,
+            `Location: ${game.location}`
+          ];
+          details.forEach(detail => {
+            const li = document.createElement("li");
+            li.textContent = detail;
+            li.style.marginBottom = "10px";
+            ul.appendChild(li);
+          });
+          section.appendChild(ul);
+
+          const link = document.createElement("a");
+          link.href = `game.html?gameId=${game._id}`;
+          link.innerText = "View Details";
+          section.appendChild(link);
         });
       })
       .catch(error => {
         console.error("Error fetching fixtures:", error);
       });
   });
-  
-  
   

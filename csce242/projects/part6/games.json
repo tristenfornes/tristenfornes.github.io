@@ -35,7 +35,7 @@
     },
     {
       "_id": 3,
-      "img_name": "warriors.jpeg",
+      "img_name": "images/warriors.jpeg",
       "teamA": "Bulls",
       "teamB": "Bears",
       "date": "2025-03-14",
