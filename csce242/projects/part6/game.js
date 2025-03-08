@@ -58,12 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const gameDiv = document.createElement('div');
         gameDiv.classList.add('game-item');
   
-        // Display the game image
-        const img = document.createElement('img');
-        img.src = game.img_name;
-        img.alt = `${game.teamA} vs. ${game.teamB}`;
-        gameDiv.appendChild(img);
-  
         // Create a title for the game (teams and date)
         const title = document.createElement('h2');
         title.textContent = `${game.teamA} vs. ${game.teamB} - ${game.date}`;
