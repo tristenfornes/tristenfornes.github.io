@@ -1,139 +1,155 @@
 [
-    {
-      "_id": 1,
-      "img_name": "images/game1.jpg",
-      "teamA": "Falcons",
-      "teamB": "Hawks",
-      "date": "2025-03-12",
-      "location": "Falcon Stadium",
-      "score": "2-1",
-      "game_summary": "Falcons edged out the Hawks in a thrilling match.",
-      "play_by_play": "The match began with high energy and saw quick transitions until a last-minute goal secured the win.",
-      "match_stats": {
-        "possession": "55%-45%",
-        "shots_on_goal": "8-5",
-        "fouls": "12-14",
-        "yellow_cards": "2-3"
-      }
-    },
-    {
-      "_id": 2,
-      "img_name": "lions.jpeg",
-      "teamA": "Lions",
-      "teamB": "Tigers",
-      "date": "2025-03-13",
-      "location": "Lion Arena",
-      "score": "3-3",
-      "game_summary": "A fierce contest ended in a draw with both sides showcasing strong determination.",
-      "play_by_play": "Early pressure from both teams set a fast pace, with crucial equalizers in the second half.",
-      "match_stats": {
-        "possession": "48%-52%",
-        "shots_on_goal": "7-7",
-        "fouls": "10-12",
-        "yellow_cards": "1-2"
-      }
-    },
-    {
-      "_id": 3,
-      "img_name": "images/warriors.jpeg",
-      "teamA": "Bulls",
-      "teamB": "Bears",
-      "date": "2025-03-14",
-      "location": "Bullring",
-      "score": "4-2",
-      "game_summary": "Bulls displayed an aggressive offense to overcome the Bears in a high-scoring encounter.",
-      "play_by_play": "Constant pressure and tactical maneuvers led to multiple breakaways and exciting goals.",
-      "match_stats": {
-        "possession": "60%-40%",
-        "shots_on_goal": "10-4",
-        "fouls": "8-9",
-        "yellow_cards": "3-1"
-      }
-    },
-    {
-      "_id": 4,
-      "img_name": "sharks.png",
-      "teamA": "Eagles",
-      "teamB": "Sharks",
-      "date": "2025-03-15",
-      "location": "Eagle Nest Stadium",
-      "score": "1-0",
-      "game_summary": "Eagles secured a narrow win with a stellar defensive display against the Sharks.",
-      "play_by_play": "A singular moment of brilliance in the 70th minute proved decisive in this tight match.",
-      "match_stats": {
-        "possession": "50%-50%",
-        "shots_on_goal": "5-3",
-        "fouls": "7-11",
-        "yellow_cards": "0-1"
-      }
-    },
-    {
-      "_id": 5,
-      "img_name": "images/game5.jpg",
-      "teamA": "Dragons",
-      "teamB": "Knights",
-      "date": "2025-03-16",
-      "location": "Dragon's Den",
-      "score": "5-4",
-      "game_summary": "An epic clash ended in a high-scoring thriller between the Dragons and Knights.",
-      "play_by_play": "The game was filled with rapid turnovers and dramatic goals, particularly in the second half.",
-      "match_stats": {
-        "possession": "53%-47%",
-        "shots_on_goal": "12-11",
-        "fouls": "15-13",
-        "yellow_cards": "2-4"
-      }
-    },
-    {
-      "_id": 6,
-      "img_name": "images/game6.jpg",
-      "teamA": "Wolves",
-      "teamB": "Panthers",
-      "date": "2025-03-17",
-      "location": "Wolf Arena",
-      "score": "0-0",
-      "game_summary": "A defensive battle left both Wolves and Panthers without a score.",
-      "play_by_play": "Numerous missed opportunities defined the match, with both defenses holding strong throughout.",
-      "match_stats": {
-        "possession": "47%-53%",
-        "shots_on_goal": "3-3",
-        "fouls": "9-10",
-        "yellow_cards": "1-1"
-      }
-    },
-    {
-      "_id": 7,
-      "img_name": "images/game7.jpg",
-      "teamA": "Raptors",
-      "teamB": "Cheetahs",
-      "date": "2025-03-18",
-      "location": "Raptor Stadium",
-      "score": "2-2",
-      "game_summary": "A well-fought match ended in a balanced draw between the Raptors and Cheetahs.",
-      "play_by_play": "Quick transitions and strategic plays kept the match exciting right until the final whistle.",
-      "match_stats": {
-        "possession": "52%-48%",
-        "shots_on_goal": "6-6",
-        "fouls": "11-11",
-        "yellow_cards": "1-1"
-      }
-    },
-    {
-      "_id": 8,
-      "img_name": "images/game8.jpg",
-      "teamA": "Pirates",
-      "teamB": "Vikings",
-      "date": "2025-03-19",
-      "location": "Pirate Cove",
-      "score": "3-1",
-      "game_summary": "Pirates sailed to victory in a hard-fought contest against the Vikings.",
-      "play_by_play": "Early dominance by the Pirates set the tone, with a solid defense sealing the win in the later stages.",
-      "match_stats": {
-        "possession": "58%-42%",
-        "shots_on_goal": "9-4",
-        "fouls": "10-8",
-        "yellow_cards": "2-0"
-      }
+  {
+    "_id": 1,
+    "img_name": "images/giants_cowboys.jpg",
+    "teamA": "Giants",
+    "teamB": "Cowboys",
+    "date": "2025-09-15",
+    "location": "MetLife Stadium",
+    "score": "21-17",
+    "game_summary": "In a tightly contested NFL matchup, the Giants edged out the Cowboys in the final minutes.",
+    "play_by_play": "The game started with both teams trading field goals, but the Giants broke the deadlock with a long touchdown drive in the first quarter. The Cowboys responded in the second quarter with a balanced attack, scoring on a quick strike. In the third quarter, defensive stands and a critical turnover set up the Giants for another scoring drive. With the score tied late in the fourth quarter, a disciplined drive culminated in a go-ahead touchdown with just under two minutes remaining, allowing the Giants to secure a hard-fought victory.",
+    "match_stats": {
+      "total_yards": "350-320",
+      "turnovers": "1-2",
+      "penalty_yards": "45-55",
+      "time_of_possession": "30:15-29:45"
     }
-  ]
-  
+  },
+  {
+    "_id": 2,
+    "img_name": "lions.jpeg",
+    "teamA": "Lions",
+    "teamB": "Falcons",
+    "date": "2025-10-05",
+    "location": "Ford Field",
+    "score": "24-21",
+    "game_summary": "In a nail-biting NFL battle at Ford Field, the Lions managed a narrow victory over the Falcons.",
+    "play_by_play": "The Lions started with a methodical drive that resulted in an early touchdown, establishing a modest lead in the first quarter. The Falcons countered in the second quarter with an explosive run that brought the game to a tie. After a defensive stalemate in the third quarter, momentum shifted in the fourth when a critical interception by the Lions set up a game-winning field goal. The final minute was a tense exchange of punts and short drives, but the Lions held on to clinch the win.",
+    "match_stats": {
+      "total_yards": "310-305",
+      "turnovers": "1-1",
+      "penalty_yards": "40-50",
+      "time_of_possession": "29:30-30:30"
+    }
+  },
+  {
+    "_id": 3,
+    "img_name": "warriors.jpeg",
+    "teamA": "Warriors",
+    "teamB": "Lakers",
+    "date": "2025-03-14",
+    "location": "Chase Center",
+    "score": "120-115",
+    "game_summary": "In an electrifying NBA showdown, the Warriors narrowly defeated the Lakers in a high-scoring battle.",
+    "play_by_play": "The game was a back-and-forth affair from tip-off. The Warriors surged ahead in the first quarter with their trademark three-point shooting, but the Lakers quickly closed the gap with fast-break points. In the second quarter, both teams traded baskets while defensive adjustments kept the lead razor-thin. The third quarter saw a flurry of steals and fast-break dunks, with the Warriors pulling slightly ahead. In the final period, clutch shooting and strategic timeouts culminated in a dramatic finish—a decisive three-pointer by the Warriors with less than 10 seconds left sealed the victory.",
+    "match_stats": {
+      "FG%": "48%-45%",
+      "rebounds": "42-38",
+      "assists": "25-23",
+      "turnovers": "12-15"
+    }
+  },
+  {
+    "_id": 4,
+    "img_name": "sharks.png",
+    "teamA": "Sharks",
+    "teamB": "Predators",
+    "date": "2025-03-15",
+    "location": "SAP Center at San Jose",
+    "score": "3-2 OT",
+    "game_summary": "In a thrilling NHL overtime battle, the Sharks edged out the Predators in a game full of momentum swings.",
+    "play_by_play": "The first period was a showcase of aggressive forechecking, with both teams exchanging rapid shots on goal. The Sharks took a 2-0 lead in the second period, capitalizing on a power play, but the Predators managed to tie the game late in the period. In the third period, the intensity increased as both teams fought hard on the penalty kill, and neither side could secure the winning goal in regulation. The overtime period was a sudden-death scenario, where a breakaway by the Sharks resulted in a spectacular goal, clinching the victory.",
+    "match_stats": {
+      "shots_on_goal": "35-32",
+      "penalty_minutes": "8-10",
+      "hits": "12-9",
+      "power_play_percentage": "25%-20%"
+    }
+  },
+  {
+    "_id": 5,
+    "img_name": "images/real_barca.jpg",
+    "teamA": "Real Madrid",
+    "teamB": "Barcelona",
+    "date": "2025-04-20",
+    "location": "Santiago Bernabéu Stadium",
+    "score": "2-2",
+    "game_summary": "In one of the fiercest El Clásico matches, Real Madrid and Barcelona battled to a dramatic 2-2 draw.",
+    "play_by_play": "From the opening whistle, both teams pressed relentlessly. Real Madrid drew first blood with a swift counterattack that led to an early goal. Barcelona responded with an intricately worked set-piece that equalized before halftime. The second half saw tactical battles and physical challenges as midfielders dueled for control. A controversial penalty in the 75th minute gave Real Madrid a brief lead, only for Barcelona to snatch an equalizer in the dying moments of stoppage time, leaving the stadium in a mix of jubilation and disbelief.",
+    "match_stats": {
+      "possession": "55%-45%",
+      "shots_on_target": "6-5",
+      "fouls": "14-12",
+      "corners": "7-4"
+    }
+  },
+  {
+    "_id": 6,
+    "img_name": "images/mancity_liverpool.jpg",
+    "teamA": "Manchester City",
+    "teamB": "Liverpool",
+    "date": "2025-05-02",
+    "location": "Etihad Stadium",
+    "score": "3-2",
+    "game_summary": "A nail-biting Premier League clash saw Manchester City edge past Liverpool in a game filled with twists and tactical brilliance.",
+    "play_by_play": "City began the match with relentless pressure, scoring early through a rapid-fire break. Liverpool quickly countered with an equally impressive drive, leveling the score before halftime. The second half was a showcase of midfield artistry and defensive adjustments, with both sides trading goals. In the final 10 minutes, a perfectly executed set-piece gave City a slight edge, and despite a late surge from Liverpool, City held on to secure the victory in a match that had fans on the edge of their seats until the final buzzer.",
+    "match_stats": {
+      "possession": "60%-40%",
+      "shots_on_target": "10-8",
+      "fouls": "12-15",
+      "corner_kicks": "6-5"
+    }
+  },
+  {
+    "_id": 7,
+    "img_name": "images/raptors_celtics.jpg",
+    "teamA": "Toronto Raptors",
+    "teamB": "Boston Celtics",
+    "date": "2025-03-22",
+    "location": "Scotiabank Arena",
+    "score": "110-105",
+    "game_summary": "In a thrilling NBA contest, the Toronto Raptors edged out the Boston Celtics in a fast-paced, high-scoring battle.",
+    "play_by_play": "The game featured non-stop action from the opening tip-off, with both teams exchanging three-pointers and driving to the hoop. The Raptors built a slim lead in the first half, but the Celtics fought back fiercely in the third quarter, trimming the deficit to just a few points. In the final quarter, key defensive stops and clutch shooting from downtown allowed the Raptors to maintain a narrow lead. With the clock winding down, every possession was critical, and the Raptors' final play secured a hard-fought victory.",
+    "match_stats": {
+      "FG%": "47%-44%",
+      "rebounds": "38-36",
+      "assists": "24-21",
+      "turnovers": "11-13"
+    }
+  },
+  {
+    "_id": 8,
+    "img_name": "images/dodgers_giants.jpg",
+    "teamA": "Dodgers",
+    "teamB": "Giants",
+    "date": "2025-06-10",
+    "location": "Dodger Stadium",
+    "score": "5-3",
+    "game_summary": "In a classic MLB rivalry game, the Dodgers triumphed over the Giants in a pitcher's duel.",
+    "play_by_play": "The early innings were a showcase of brilliant pitching as both teams kept the scoring to a minimum. The Dodgers broke the deadlock in the middle innings with timely hits and aggressive baserunning, while the Giants managed to claw back a run. As the game progressed into the later innings, the Dodgers' bullpen held strong despite a late rally by the Giants. A critical strikeout in the final inning sealed the victory for the Dodgers in a game that was a true test of nerves.",
+    "match_stats": {
+      "innings": "9",
+      "strikeouts": "12-10",
+      "earned_run_average": "2.85-3.20",
+      "hits": "8-9"
+    }
+  },
+  {
+    "_id": 9,
+    "img_name": "eagles.jpeg",
+    "teamA": "Eagles",
+    "teamB": "Chiefs",
+    "date": "2025-03-20",
+    "location": "Lincoln Financial Field",
+    "score": "28-31",
+    "game_summary": "In a high-stakes NFL showdown, the Eagles narrowly fell to the Chiefs in a game marked by explosive plays and last-minute heroics.",
+    "play_by_play": "The game opened with a spectacular long touchdown pass from the Eagles, giving them an early lead. The Chiefs quickly responded with a balanced offensive attack, tying the score before halftime. In the third quarter, both teams exchanged scoring drives amid fierce defensive stands. The fourth quarter turned into a roller coaster of momentum shifts—key interceptions, critical penalties, and a series of big plays defined the period. In the dying minutes, a decisive field goal attempt by the Chiefs broke the deadlock, and despite a late surge from the Eagles, the Chiefs held on for the win.",
+    "match_stats": {
+      "total_yards": "380-405",
+      "turnovers": "1-2",
+      "penalty_yards": "50-65",
+      "time_of_possession": "30:00-30:00"
+    }
+  }
+]
