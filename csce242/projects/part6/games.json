@@ -8,7 +8,7 @@
     "location": "MetLife Stadium",
     "score": "21-17",
     "game_summary": "In a tightly contested NFL matchup, the Giants edged out the Cowboys in the final minutes.",
-    "play_by_play": "The game started with both teams trading field goals, but the Giants broke the deadlock with a long touchdown drive in the first quarter. The Cowboys responded in the second quarter with a balanced attack, scoring on a quick strike. In the third quarter, defensive stands and a critical turnover set up the Giants for another scoring drive. With the score tied late in the fourth quarter, a disciplined drive culminated in a go-ahead touchdown with just under two minutes remaining, allowing the Giants to secure a hard-fought victory.",
+    "play_by_play": "Giants Fumble\n3 plays, -2 yards, 0:50\nCOW 0 - GI 0\nCowboys Punt\n3 plays, -12 yards, 1:20\nCOW 0 - GI 0\nGiants Pass Completion\n3 plays, +8 yards, 1:55\nCOW 0 - GI 0\nCowboys Run Play\n3 plays, +10 yards, 1:30\nCOW 0 - GI 0\nGiants Field Goal\n6 plays, 32 yards, 2:10\nCOW 0 - GI 3\nEND QUARTER 2\nCowboys Drive (Punt)\n3 plays, -3 yards, 1:30\nCOW 0 - GI 3\nGiants Touchdown Drive\n11 plays, 70 yards, 5:27\nCOW 7 - GI 3\nCowboys Field Goal\n11 plays, 45 yards, 4:35\nCOW 7 - GI 6\nEND GAME",
     "match_stats": {
       "total_yards": "350-320",
       "turnovers": "1-2",
@@ -25,7 +25,7 @@
     "location": "Ford Field",
     "score": "24-21",
     "game_summary": "In a nail-biting NFL battle at Ford Field, the Lions managed a narrow victory over the Falcons.",
-    "play_by_play": "The Lions started with a methodical drive that resulted in an early touchdown, establishing a modest lead in the first quarter. The Falcons countered in the second quarter with an explosive run that brought the game to a tie. After a defensive stalemate in the third quarter, momentum shifted in the fourth when a critical interception by the Lions set up a game-winning field goal. The final minute was a tense exchange of punts and short drives, but the Lions held on to clinch the win.",
+    "play_by_play": "Lions Opening Drive - Touchdown\n4 plays, 28 yards, 2:00\nLIO 7 - FAL 0\nFalcons Counter - Field Goal\n3 plays, 35 yards, 2:15\nLIO 7 - FAL 3\nLions Defensive Stop - Interception\n2 plays, 0 yards, 1:00\nLIO 7 - FAL 3\nFalcons Final Drive - Punt\n3 plays, -4 yards, 1:45\nLIO 7 - FAL 3\nLions Game-Winning Field Goal\n5 plays, 40 yards, 0:50\nLIO 10 - FAL 3\nEND GAME",
     "match_stats": {
       "total_yards": "310-305",
       "turnovers": "1-1",
@@ -42,7 +42,7 @@
     "location": "Chase Center",
     "score": "120-115",
     "game_summary": "In an electrifying NBA showdown, the Warriors narrowly defeated the Lakers in a high-scoring battle.",
-    "play_by_play": "The game was a back-and-forth affair from tip-off. The Warriors surged ahead in the first quarter with their trademark three-point shooting, but the Lakers quickly closed the gap with fast-break points. In the second quarter, both teams traded baskets while defensive adjustments kept the lead razor-thin. The third quarter saw a flurry of steals and fast-break dunks, with the Warriors pulling slightly ahead. In the final period, clutch shooting and strategic timeouts culminated in a dramatic finish—a decisive three-pointer by the Warriors with less than 10 seconds left sealed the victory.",
+    "play_by_play": "1st Quarter:\nWarriors surge ahead with quick three-pointers and fast-break dunks; lead 30-28.\n2nd Quarter:\nLakers close the gap with efficient ball movement; halftime score 62-60 Warriors.\n3rd Quarter:\nBoth teams exchange scoring runs in a high-octane period; Warriors up 90-87.\n4th Quarter:\nClutch shooting from downtown secures a dramatic finish; final score 120-115.\nEND GAME",
     "match_stats": {
       "FG%": "48%-45%",
       "rebounds": "42-38",
@@ -59,7 +59,7 @@
     "location": "SAP Center at San Jose",
     "score": "3-2 OT",
     "game_summary": "In a thrilling NHL overtime battle, the Sharks edged out the Predators in a game full of momentum swings.",
-    "play_by_play": "The first period was a showcase of aggressive forechecking, with both teams exchanging rapid shots on goal. The Sharks took a 2-0 lead in the second period, capitalizing on a power play, but the Predators managed to tie the game late in the period. In the third period, the intensity increased as both teams fought hard on the penalty kill, and neither side could secure the winning goal in regulation. The overtime period was a sudden-death scenario, where a breakaway by the Sharks resulted in a spectacular goal, clinching the victory.",
+    "play_by_play": "1st Period:\nSharks capitalize on a power play to take a 1-0 lead.\n2nd Period:\nPredators tie the game at 1-1 with a penalty kill advantage.\n3rd Period:\nBoth teams struggle to break through; score remains tied.\nOvertime:\nA swift breakaway by the Sharks results in the winning goal; final score 3-2 OT.\nEND GAME",
     "match_stats": {
       "shots_on_goal": "35-32",
       "penalty_minutes": "8-10",
@@ -76,7 +76,7 @@
     "location": "Santiago Bernabéu Stadium",
     "score": "2-2",
     "game_summary": "In one of the fiercest El Clásico matches, Real Madrid and Barcelona battled to a dramatic 2-2 draw.",
-    "play_by_play": "From the opening whistle, both teams pressed relentlessly. Real Madrid drew first blood with a swift counterattack that led to an early goal. Barcelona responded with an intricately worked set-piece that equalized before halftime. The second half saw tactical battles and physical challenges as midfielders dueled for control. A controversial penalty in the 75th minute gave Real Madrid a brief lead, only for Barcelona to snatch an equalizer in the dying moments of stoppage time, leaving the stadium in a mix of jubilation and disbelief.",
+    "play_by_play": "[00:00] Kick-off.\n[12'] Real Madrid launches a counterattack and scores a goal.\n[28'] Barcelona responds with a precise set-piece equalizer.\n[45+2'] Half-time, score 1-1.\n[60'] Real Madrid strikes again from long range.\n[75'] Barcelona is awarded a penalty but misses the conversion.\n[90+3'] Barcelona levels with a header; final score 2-2.\nEND GAME",
     "match_stats": {
       "possession": "55%-45%",
       "shots_on_target": "6-5",
@@ -93,7 +93,7 @@
     "location": "Etihad Stadium",
     "score": "3-2",
     "game_summary": "A nail-biting Premier League clash saw Manchester City edge past Liverpool in a game filled with twists and tactical brilliance.",
-    "play_by_play": "City began the match with relentless pressure, scoring early through a rapid-fire break. Liverpool quickly countered with an equally impressive drive, leveling the score before halftime. The second half was a showcase of midfield artistry and defensive adjustments, with both sides trading goals. In the final 10 minutes, a perfectly executed set-piece gave City a slight edge, and despite a late surge from Liverpool, City held on to secure the victory in a match that had fans on the edge of their seats until the final buzzer.",
+    "play_by_play": "[00:00] Kick-off.\n[10'] City scores on a fast break from distance.\n[23'] Liverpool answers with a clinical finish to tie the game.\n[35'] A set-piece goal gives City the lead.\n[55'] Liverpool’s near-miss on a powerful shot hits the post.\n[75'] In stoppage time, City clinches the win with a decisive goal; final score 3-2.\nEND GAME",
     "match_stats": {
       "possession": "60%-40%",
       "shots_on_target": "10-8",
@@ -110,7 +110,7 @@
     "location": "Scotiabank Arena",
     "score": "110-105",
     "game_summary": "In a thrilling NBA contest, the Toronto Raptors edged out the Boston Celtics in a fast-paced, high-scoring battle.",
-    "play_by_play": "The game featured non-stop action from the opening tip-off, with both teams exchanging three-pointers and driving to the hoop. The Raptors built a slim lead in the first half, but the Celtics fought back fiercely in the third quarter, trimming the deficit to just a few points. In the final quarter, key defensive stops and clutch shooting from downtown allowed the Raptors to maintain a narrow lead. With the clock winding down, every possession was critical, and the Raptors' final play secured a hard-fought victory.",
+    "play_by_play": "1st Quarter:\nRaptors build a slim lead with sharp perimeter shooting; score 28-26.\n2nd Quarter:\nCeltics tighten their defense; halftime score 55-53 in favor of the Raptors.\n3rd Quarter:\nHigh-scoring run as both teams trade buckets; Raptors lead 85-80.\n4th Quarter:\nA late rally by the Celtics is thwarted by clutch plays; final score 110-105.\nEND GAME",
     "match_stats": {
       "FG%": "47%-44%",
       "rebounds": "38-36",
@@ -127,7 +127,7 @@
     "location": "Dodger Stadium",
     "score": "5-3",
     "game_summary": "In a classic MLB rivalry game, the Dodgers triumphed over the Giants in a pitcher's duel.",
-    "play_by_play": "The early innings were a showcase of brilliant pitching as both teams kept the scoring to a minimum. The Dodgers broke the deadlock in the middle innings with timely hits and aggressive baserunning, while the Giants managed to claw back a run. As the game progressed into the later innings, the Dodgers' bullpen held strong despite a late rally by the Giants. A critical strikeout in the final inning sealed the victory for the Dodgers in a game that was a true test of nerves.",
+    "play_by_play": "Top 1st:\nDodgers score a run on a base hit.\nBottom 1st:\nGiants respond with a single, tying the inning.\nTop 4th:\nDodgers add two runs with consecutive hits, taking a 3-1 lead.\nBottom 5th:\nGiants score one run to narrow the margin.\nTop 9th:\nDodgers load the bases and score the go-ahead run.\nBottom 9th:\nGiants fail to rally; final score 5-3.\nEND GAME",
     "match_stats": {
       "innings": "9",
       "strikeouts": "12-10",
@@ -144,7 +144,7 @@
     "location": "Lincoln Financial Field",
     "score": "28-31",
     "game_summary": "In a high-stakes NFL showdown, the Eagles narrowly fell to the Chiefs in a game marked by explosive plays and last-minute heroics.",
-    "play_by_play": "The game opened with a spectacular long touchdown pass from the Eagles, giving them an early lead. The Chiefs quickly responded with a balanced offensive attack, tying the score before halftime. In the third quarter, both teams exchanged scoring drives amid fierce defensive stands. The fourth quarter turned into a roller coaster of momentum shifts—key interceptions, critical penalties, and a series of big plays defined the period. In the dying minutes, a decisive field goal attempt by the Chiefs broke the deadlock, and despite a late surge from the Eagles, the Chiefs held on for the win.",
+    "play_by_play": "Eagles Kickoff: Touchback.\n1st Quarter:\nA long touchdown pass propels the Eagles to a 7-0 lead.\n2nd Quarter:\nChiefs answer with a field goal, tying the score at 7-7.\n3rd Quarter:\nA critical turnover leads to a Chiefs touchdown, extending their lead to 14-7.\n4th Quarter:\nA late drive culminates in a game-sealing field goal; final score 31-28.\nEND GAME",
     "match_stats": {
       "total_yards": "380-405",
       "turnovers": "1-2",

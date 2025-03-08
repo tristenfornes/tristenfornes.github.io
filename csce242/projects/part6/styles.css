@@ -238,9 +238,11 @@ footer {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Uniform fixtures images */
 .game-item img {
   width: 100%;
-  height: auto;
+  height: 200px;          /* Fixed height for uniformity */
+  object-fit: cover;      /* Ensures image covers the area without distortion */
   border-radius: 8px;
   margin-bottom: 1rem;
 }
