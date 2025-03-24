@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GameDay Central - About Us</title>
+  <title>GameDay Central - About & Contact</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,7 +16,7 @@
     <nav>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="about.html" class="active">About & Contact</a></li>
         <li><a href="fixtures.html">Fixtures</a></li>
         <li><a href="fanzone.html">Fanzone</a></li>
       </ul>
@@ -70,6 +70,7 @@
       </div>
     </section>
 
+    <!-- About Blocks: Bottom Row for Contact Information -->
     <section class="about-blocks-bottom">
       <div class="block">
         <h2>Contact Information</h2>
@@ -78,9 +79,57 @@
           <strong>info@gamedaycentral.com</strong> or call us at <strong>(123) 456-7890</strong>.
         </p>
         <p>
-          Our team is always eager to hear from you and ensure your experience with GameDay Central is exceptional. We value every opportunity to improve and grow with our fan community.
+          Our team is always eager to hear from you and ensure your experience with GameDay Central is exceptional.
         </p>
       </div>
+    </section>
+
+    <!-- Contact Form & Headquarters Section -->
+    <section class="contact-content">
+      <h2>Contact Our Headquarters</h2>
+      <p>Have a question or need support? Reach out to our headquarters and we’ll get back to you promptly.</p>
+
+      <form id="contact-form">
+          <input type="hidden" name="access_key" value="817cffc5-dfd0-4c25-8906-e6530a0c8308">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="First and Last" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="contact-method">Preferred Contact Method:</label>
+          <select id="contact-method" name="contact-method">
+              <option>Email</option>
+              <option>Phone</option>
+              <option>Text</option>
+          </select>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <input type="hidden" name="subject" value="Contact from GameDay Central Headquarters">
+          <input type="hidden" name="from_name" value="GameDay Central Website">
+
+          <button type="submit">Send</button>
+          <button type="reset">Cancel</button>
+          <div id="result"></div>
+      </form>
+
+      <h3>Visit Our Headquarters</h3>
+      <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211593.67774992716!2d-81.1023708995099!3d34.0399919986034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8a5697931d1e3%3A0xf32808f4b379fa96!2sColumbia%2C%20SC!5e0!3m2!1sen!2sus!4v1742330969352!5m2!1sen!2sus" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
   </main>
 
@@ -88,6 +137,8 @@
     <p>GameDay Central - Where Every Play Matters</p>
   </footer>
 
+  <!-- External JavaScript Files -->
   <script src="script.js"></script>
+  <script src="contactform.js"></script>
 </body>
 </html>
